@@ -1,0 +1,33 @@
+Navigation:
+  NavigationBar:
+    BeforeNavigation: 'dashboard/NavigationWrapper'
+  SubNavigation:
+    BeforeSubNavigation: ''
+
+
+Dashboard:
+  Serverlist:
+    BeforeContent: 'dashboard/DashboardContainer'
+    AfterContent: ''
+
+Account:
+  Overview:
+    BeforeContent: 'dashboard/AccountOverviewContainer'
+    AfterContent: ''
+  API:
+    BeforeContent: 'dashboard/AccountApiContainer'
+    AfterContent: ''
+  SSH:
+    BeforeContent: 'dashboard/ssh/AccountSSHContainer'
+    AfterContent: ''
+
+Server:
+  Base:
+    BeforeContent: 'server/ServerWrapper'
+  Console:
+    BeforeContent: 'server/ServerHeroBanner'
+    AfterContent: 'server/console/ServerDetailsBlock'
+  Overview:
+    BeforeContent: 'server/overview/ServerOverviewContainer'
+  Backups:
+    BeforeContent: 'server/backups/BackupContainer'
